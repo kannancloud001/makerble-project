@@ -1,0 +1,4 @@
+workflow-aggregator:2.6
+git:4.7.1
+docker-workflow:1.26
+postgresql:42.2.5
