@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: jenkins-ingress
+spec:
+  rules:
+  - host: jenkins.example.com  # Replace with your desired host
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: jenkins-service
+            port:
+              number: 80
